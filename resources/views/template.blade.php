@@ -51,8 +51,8 @@
             </div>
         </div>
 
-        <div id="layout-wrapper">
-            <div class="page-content">
+        <div id="layout-wrapper" style="background-image: url('assets/Dashboard1.png');">
+            <div class="page-content" style="padding-top: 50px; ">
                 <div class="container-fluid">
                     @include('sweetalert::alert')
 

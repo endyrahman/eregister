@@ -2,7 +2,7 @@
 
 @section('main')
 <!-- start page title -->
-<div class="row">
+<!-- <div class="row">
     <div class="col-12">
         <div class="card">
             <div class="card-body">
@@ -12,12 +12,13 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- end page title -->
 
 <div class="row">
     <div class="col-12">
-        <div class="card">
+        <h1 class="mb-sm-0" style="font-size: 26px;text-align: center;">Pendaftaran NPWPD Online <br>Kabupaten Temanggung</h1>
+        <div class="card" style="border-radius: 20px; margin-top: 20px; box-shadow: 0px 6px 10px 3px rgba(0,0,0,0.3),0px -1px 5px 3px rgba(0,0,0,0.2);">
             <div class="card-body">
                 <div id="basic-example">
                     <!-- Seller Details -->
@@ -37,23 +38,18 @@
                                     <option value="2">Pribadi</option>
                                 </select>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-8 mt-3">
+                            <div class="col-md-12 mt-3">
                                 <label class="form-label">Alamat</label>
                                 <textarea class="form-control" rows="3" id="alamat_wp" name="alamat_wp" required></textarea>
                             </div>
-                            <div class="col-md-2 mt-3">
+                             <div class="col-md-6 mt-3">
                                 <label class="form-label">RT</label>
                                 <input class="form-control" type="text" maxlength="3" id="rt_wp" name="rt_wp" required>
                             </div>
-                            <div class="col-md-2 mt-3">
+                            <div class="col-md-6 mt-3">
                                 <label class="form-label">RW</label>
                                 <input class="form-control" type="text" maxlength="3" id="rw_wp" name="rw_wp" required>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Provinsi</label><br/>
 
@@ -67,8 +63,6 @@
                                     @endphp
                                 </select>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Kabupaten/Kota</label>
                                 <select class='form-select select2' id='kode_kota_wp' name='kode_kota_wp' required>
@@ -81,8 +75,6 @@
                                     <option value="">Pilih</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Kelurahan</label>
                                 <select class='form-select select2' id='kode_kelurahan_wp' name='kode_kelurahan_wp' required>
@@ -93,8 +85,6 @@
                                 <label class="form-label">Kode Pos</label>
                                 <input class="form-control" type="text" id="kode_pos_wp" name="kode_pos_wp" required>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">No Telp/HP WP</label>
                                 <input class="form-control" type="text" id="notel_wp" name="notel_wp" required>
@@ -103,8 +93,6 @@
                                 <label class="form-label">E-mail WP</label>
                                 <input class="form-control" type="text" id="email_wp" name="email_wp">
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Nama Pemilik</label>
                                 <input class="form-control" type="text" id="nama_pemilik" name="nama_pemilik" required>
@@ -118,40 +106,33 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-md-6 mt-3">
-                                <label class="form-label">Alamat Pemilik</label>
-                                <textarea class="form-control" rows="3" id="alamat_pemilik" name="alamat_pemilik"></textarea>
-                            </div>
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">No Telp/HP Pemilik</label>
                                 <input class="form-control" type="text" id="notel_pemilik" name="notel_pemilik" required>
                             </div>
+                            <div class="col-md-12 mt-3">
+                                <label class="form-label">Alamat Pemilik</label>
+                                <textarea class="form-control" rows="3" id="alamat_pemilik" name="alamat_pemilik"></textarea>
+                            </div>
                         </div>
-
-                        <h3 class="mb-3">Form Objek Pajak</h3>
+                        <h3 class="mb-3" style="margin-top: 20px;">Form Objek Pajak</h3>
                         <div class="row">
-                            <div class="col-lg-8 mt-3">
+                            <div class="col-lg-12 mt-3">
                                 <label class="form-label">Nama Outlet Usaha (Objek Pajak)</label>
                                 <input class="form-control" type="text" name="nama_objek" id="nama_objek" required>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8 mt-3">
+                            <div class="col-md-12 mt-3">
                                 <label class="form-label">Alamat</label>
                                 <textarea class="form-control" rows="3" id="alamat_objek" name="alamat_objek" required></textarea>
                             </div>
-                            <div class="col-md-2 mt-3">
+                            <div class="col-md-6 mt-3">
                                 <label class="form-label">RT</label>
                                 <input class="form-control" type="text" maxlength="3" id="rt_objek" name="rt_objek" required>
                             </div>
-                            <div class="col-md-2 mt-3">
+                            <div class="col-md-6 mt-3">
                                 <label class="form-label">RW</label>
                                 <input class="form-control" type="text" maxlength="3" id="rw_objek" name="rw_objek" required>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Jenis Pajak</label><br/>
                                 <select class='form-select' id='jenis_pajak_id' name='jenis_pajak_id' required>
@@ -171,8 +152,6 @@
                                     <option value="">Pilih</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Provinsi</label><br/>
                                 <select class='form-select select2' id='kode_provinsi_objek' name='kode_provinsi_objek' required>
@@ -185,8 +164,6 @@
                                     @endphp
                                 </select>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Kabupaten/Kota</label><br/>
                                 <select class='form-select select2' id='kode_kota_objek' name='kode_kota_objek' required>
@@ -199,8 +176,6 @@
                                     <option value="">Pilih</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Kelurahan</label>
                                 <select class='form-select select2' id='kode_kelurahan_objek' name='kode_kelurahan_objek' required>
@@ -211,8 +186,6 @@
                                 <label class="form-label">Kode Pos</label>
                                 <input class="form-control" type="text" id="kode_pos_objek" name="kode_pos_objek" required>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">No Telp/HP Objek</label>
                                 <input class="form-control" type="text" id="notel_objek" name="notel_objek" required>
@@ -221,8 +194,6 @@
                                 <label class="form-label">E-mail Objek</label>
                                 <input class="form-control" type="text" id="email_objek" name="email_objek">
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">Nama Pengelola/Manager</label>
                                 <input class="form-control" type="text" id="nama_pengelola" name="nama_pengelola" required>
@@ -231,19 +202,19 @@
                                 <label class="form-label">NIK Pengelola/Manager</label>
                                 <input class="form-control" type="text" id="nik_pengelola" name="nik_pengelola" required>
                             </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-md-6 mt-3">
-                                <label class="form-label">Alamat Pengelola/Manager</label>
-                                <textarea class="form-control" rows="3" id="alamat_pengelola" name="alamat_pengelola"></textarea>
-                            </div>
                             <div class="col-md-6 mt-3">
                                 <label class="form-label">No Telp/HP Pengelola/Manager</label>
                                 <input class="form-control" type="text" id="notel_pengelola" name="notel_pengelola" required>
                             </div>
+                            <div class="col-md-12 mt-3">
+                                <label class="form-label">Alamat Pengelola/Manager</label>
+                                <textarea class="form-control" rows="3" id="alamat_pengelola" name="alamat_pengelola"></textarea>
+                            </div>
                         </div>
+                        
+                        
 
-                        <h3 class="mb-3">Peta Lokasi Objek Pajak</h3>
+                        <h3 class="mb-3" style="margin-top: 20px;">Peta Lokasi Objek Pajak</h3>
                         <div class="col-md-12 mb-3">
                             <button type="button" class="btn btn-success" data-id="gps" onclick="getLocation()">Dapatkan Lokasi GPS</button>
                         </div>
@@ -251,7 +222,7 @@
                             <div id="tempatmap">
                                 <input type='text' name='searchMapInput' id='searchMapInput' class='mapControls form-control'>
                             </div>
-                            <div id="map" class="row" style="width:100%;height: 600px;"></div>
+                            <div id="map" class="row" style="height: 600px;"></div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
