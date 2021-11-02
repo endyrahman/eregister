@@ -266,7 +266,7 @@
                         <div class="col-md-12 mb-3">
                             <div class="col-md-6">
                                 <label class="form-label">Foto Lokasi Objek Pajak</label>
-                                <input class="form-control" name="fotoobjek" id="fotoobjek" type="file">
+                                <input class="form-control" name="fotoobjek" id="fotoobjek" type="file" required>
                             </div>
                         </div><br/><br/>
                         <button type='submit' class='btn btn-primary btn-lg waves-effect waves-light col-md-12' id='simpanlaporan'>SIMPAN DATA</button>
